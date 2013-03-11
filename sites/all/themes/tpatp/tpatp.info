@@ -1,0 +1,21 @@
+
+name = tpatp
+description = Тема ТПАТП
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = js/formstyler/jquery.formstyler.css
+stylesheets[all][] = js/slider/css/slider.css
+stylesheets[all][] = css/style.css
+
+scripts[] = js/formstyler/jquery.formstyler.min.js
+scripts[] = js/slider/slider.jquery.js
+
+regions[header] = Header
+
+regions[content] = Content
+regions[sidebar_first] = Sidebar first
+
+regions[footer] = Footer
