@@ -85,6 +85,70 @@
  * @see html.tpl.php
  */
 ?>
+<div id="main">
+    <div class="center-block">
+        <header>
+            <a href="/"><img alt="ТПАТП" src="<?=$theme_path?>images/logo.png"/></a>
+            <a class="contact-butt" href="#contacts">Контакты</a>
+            <div class="phones">
+                <div>Телефон / факс приемной:&nbsp;&nbsp;&nbsp;&nbsp;<span>8 (3456) <span>25-26-37</span></span></div>
+                <div>Телефон / факс приемной:&nbsp;&nbsp;&nbsp;&nbsp;<span>8 (3456) <span>25-26-37</span></span></div>
+            </div>
+        </header>
+        <div id="content">
+            <div id="left-block">
+                <nav>
+                  <?php if ($main_menu): ?>
+                    <?php print(render(menu_tree('main-menu'))); ?> <!-- /#main-menu -->
+                  <?php endif; ?>
+                    <?php /*
+                    <ul class="root">
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item root-active">
+                            <a href="#menu">Пассажирам</a>
+                            <ul class="sub-menu">
+                                <li class="sub-item sub-item-active">
+                                    <a href="#menu">&mdash;&nbsp;&nbsp;Расписание движения</a>
+                                    <ul class="sub-sub-menu">
+                                        <li class="sub-sub-item"><a href="#menu">&ndash;&nbsp;&nbsp;Расписание движения</a></li>
+                                        <li class="sub-sub-item"><a href="#menu">&ndash;&nbsp;&nbsp;Расписание движения</a></li>
+                                        <li class="sub-sub-item"><a href="#menu">&ndash;&nbsp;&nbsp;Расписание движения</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-item"><a href="#menu">&mdash;&nbsp;&nbsp;Расписание движения</a></li>
+                                <li class="sub-item"><a href="#menu">&mdash;&nbsp;&nbsp;Расписание движения</a></li>
+                            </ul>
+                        </li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                        <li class="root-item"><a href="#menu">О компании</a></li>
+                    </ul>
+                    */?>
+                </nav>
+                <section>
+                    <h2>Поздравляем!</h2>
+                    <img src="<?=$theme_path?>images/tmp/happy.jpg" width="229" height="229" />
+                    <p>Поздравляем всех девушек и женщин с праздником 8 марта! Всегда будьте такими же красивыми, любимыми и замечательными!</p>
+                </section>
+            </div>
+            <div id="content-block">
+                <?php print render($page['content']); ?>
+            </div>
+            <div class="both"></div>
+        </div> 
+    </div>
+    <footer>
+        <div class="center-block">
+            <p>Справочная автовокзала: 8 (3456) <span>25-84-53, 25-65-55</span><br />Россия, 626150 г.Тобольск 6 мкр. строение 44</p>
+            <img src="<?=$theme_path?>images/tmp/counter.gif" width="88" height="31" />
+        </div>
+    </footer>
+</div>
+<?/*
 <div id="page-wrapper"><div id="page">
 
   <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
@@ -105,7 +169,7 @@
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
               </strong>
             </div>
-          <?php else: /* Use h1 when the content title is empty */ ?>
+          <?php else:  ?>
             <h1 id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
               <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
             </h1>
@@ -245,3 +309,4 @@
   </div></div> <!-- /.section, /#footer-wrapper -->
 
 </div></div> <!-- /#page, /#page-wrapper -->
+*/?>

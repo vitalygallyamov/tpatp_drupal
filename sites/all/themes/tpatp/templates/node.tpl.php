@@ -78,6 +78,15 @@
  * @see template_process()
  */
 ?>
+<section id="<?php print $node->type?>">
+    <a class="green" href="#submit">Записаться на ТО</a>
+    <?php if ($title): ?>
+    <h1><?=$title?></h1>
+    <pre><?php //print_r($content);?></pre>
+    <?php print render($content);?>
+    <?endif;?>
+</section>
+<?/*
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
@@ -122,3 +131,4 @@
   <?php print render($content['comments']); ?>
 
 </div>
+*>
